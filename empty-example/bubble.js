@@ -62,6 +62,7 @@ class Bubble {
     if (this.position.y + this.vy - this.r < 0 + windowOffset.y) {
       this.vx = 0;
       this.vy = 0;
+      this.stable = true;
       return false; //continues false
     }
     if (
